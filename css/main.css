@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+}
+body{
+    color: white;
+}
+.menu{
+    background-color: #2e2d2d;
+    font-size: 0.7em;
+    height: 100vh;
+}
+.menu a{
+    color: rgb(148, 148, 148);
+    text-decoration: none;
+}
+.nav-link.active, .menu a:active{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.areaPerfil{
+    background-color: rgb(87, 87, 87);
+}
+.contentPerfil{
+    background-color: #2e2d2d;
+}
