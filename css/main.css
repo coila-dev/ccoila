@@ -5,6 +5,10 @@ body{
     color: white;
 }
 /*MENU*/
+.lateral{
+    position: fixed;
+    height: 100vh;
+}
 .menu{
     background-color: #2e2d2d;
     font-size: 0.7em;
@@ -38,7 +42,6 @@ body{
     border: solid 0.2em;
     border-color: white;
     border-radius: 50%;
-    
 }
 .areaPerfil .cargo{
     color: #999999;
