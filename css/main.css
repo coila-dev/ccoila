@@ -4,6 +4,7 @@
 body{
     color: white;
 }
+/*MENU*/
 .menu{
     background-color: #2e2d2d;
     font-size: 0.7em;
@@ -12,15 +13,62 @@ body{
 .menu a{
     color: rgb(148, 148, 148);
     text-decoration: none;
+    text-align: center;
+    padding: 1em;
+}
+.menu a svg{
+    font-size: 3em;
+    padding-bottom: 5px;
 }
 .nav-link.active, .menu a:active{
     background-color: black;
     color: white;
     font-weight: bold;
 }
+/*MENU ------ FIN*/
+
+/* CONTENT PERFIL  */
 .areaPerfil{
-    background-color: rgb(87, 87, 87);
+    background-color: #444444;
+    padding: 3em;
+    text-align: center;
 }
+.areaPerfil img{
+    filter: grayscale(1);
+    border: solid 0.2em;
+    border-color: white;
+    border-radius: 50%;
+    
+}
+.areaPerfil .cargo{
+    color: #999999;
+    font-size: 1.2em;
+}
+.areaPerfil .redes ul{
+    padding: 0;
+    padding-top: 0.5em;
+}
+.areaPerfil .redes li{
+    display: inline-block;
+    padding-right: 0.5em;
+}
+.areaPerfil .redes li a{
+    color: white;
+}
+.areaPerfil button{
+    background-color: transparent;
+    color: white;
+    border: solid 0.2em;
+    border-radius: 3em;
+    padding: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+/*CONTENT PERFIL  --------> FIN*/
+
+/*CONTENIDO*/
 .contentPerfil{
     background-color: #2e2d2d;
+
 }
+/*CONTENIDO ----------> FIN*/
