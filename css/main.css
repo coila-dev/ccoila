@@ -1,13 +1,26 @@
 *{
     margin: 0px;
 }
+
+/*general*/
+
 body{
+    background-color: #2e2d2d;
     color: white;
 }
+.photo-header img{
+    filter: grayscale(1);
+    border: solid 0.2em;
+    border-color: white;
+    border-radius: 50%;
+    /* width: 150px; */
+    z-index: 1;
+}
+
 /*MENU*/
 .lateral{
     position: fixed;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .menu{
     background-color: #2e2d2d;
@@ -37,12 +50,26 @@ body{
     padding: 3em;
     text-align: center;
 }
-.areaPerfil img{
-    filter: grayscale(1);
-    border: solid 0.2em;
-    border-color: white;
-    border-radius: 50%;
+.areaPerfil .photo-header::before{
+    position: absolute;
+    opacity: .3;
+    top: 7%;
+    left: 26%;
+    border-radius: 300px;
+    content: '';
+    /* height: calc(100% + 0px);
+    width: calc(100% + 0px); */
+    height: 150px;
+    width: 150px;
+    background-image: -webkit-repeating-radial-gradient(center center,#fff,#fff 1px,transparent 0px,transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center,#fff,#fff 1px,transparent 0px,transparent 100%);
+    background-image: -ms-repeating-radial-gradient(center center,#fff,#fff 1px,transparent 0px,transparent 100%);
+    -webkit-background-size: 6px 6px;
+    -moz-background-size: 6px 6px;
+    background-size: 6px 6px;
+    /* z-index: -1; */
 }
+
 .areaPerfil .cargo{
     color: #999999;
     font-size: 1.2em;
@@ -67,11 +94,46 @@ body{
     padding-left: 2em;
     padding-right: 2em;
 }
+
+
+@media only screen and (max-width: 600px) {
+    
+}
 /*CONTENT PERFIL  --------> FIN*/
 
 /*CONTENIDO*/
 .contentPerfil{
     background-color: #2e2d2d;
+    padding: 5rem;  
+}
+.contentPerfil .headerDescription{
+    margin: 0;
+    /* position: absolute; */
+    top: 50%;
+    /* -ms-transform: translateY(-50%);
+    transform: translateY(-50%); */
+}
+.contentPerfil .itemsContainer{
 
+}
+.contentPerfil .itemstitle{
+    color: #ffc4007a;
+    font-weight: bold;
+    font-size: 3em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.8em;
+    border-bottom: solid 1px;
+    border-color: #ffffff1e;
+}   
+.contentPerfil .itemsContent{
+
+}
+.contentPerfil p{
+    color: #ffffffb7;
+}
+
+.contentPerfil .iconSobremi svg{
+font-size: 3em;
+color: #ffc4007a;
 }
 /*CONTENIDO ----------> FIN*/
