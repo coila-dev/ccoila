@@ -29,15 +29,19 @@ button{
     font-size: 1.2em;
 }
 
+
+
+
 /*MENU*/
 .lateral{
     position: fixed;
-    /* height: 100vh; */
 }
 .menu{
     background-color: #2e2d2d;
     font-size: 0.7em;
-    height: 100vh;
+    /* display: flex; 
+    align-items: center;
+    height: 100vh; */
 }
 .menu a{
     color: rgb(148, 148, 148);
@@ -61,6 +65,9 @@ button{
     background-color: #444444;
     padding: 3em;
     text-align: center;
+    /* display: flex; 
+    align-items: center;
+    height: 100vh; */
 }
 .areaPerfil .photo-header::before{
     position: absolute;
@@ -81,8 +88,6 @@ button{
     background-size: 6px 6px;
     /* z-index: -1; */
 }
-
-
 .areaPerfil .redes ul{
     padding: 0;
     padding-top: 0.5em;
@@ -105,8 +110,22 @@ button{
 /*CONTENIDO*/
 .contentPerfil{
     background-color: #2e2d2d;
-    padding: 5rem;  
+    padding: 5rem;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
+/* scroll style -----> https://ed.team/blog/personaliza-el-scroll-de-tu-web-solo-con-css*/ 
+    .contentPerfil::-webkit-scrollbar {
+        width: 8px;     /* Tamaño del scroll en vertical */
+    }
+    .contentPerfil::-webkit-scrollbar-thumb {
+        background: #ccc;
+        height: 30px;
+        border-radius: 4px;
+    }
+/* scroll style FIN */
+
 .contentPerfil .headerDescription{
     display: flex;
     align-items: center;
