@@ -14,6 +14,7 @@ body{
     border-radius: 50%;
     /* width: 150px; */
     z-index: 1;
+
 }
 button{
     background-color: transparent;
@@ -28,8 +29,9 @@ button{
     color: #999999;
     font-size: 1.2em;
 }
-
-
+.photo-header{
+    text-align: center;
+}
 
 
 /*MENU*/
@@ -107,8 +109,9 @@ button{
 }
 /*CONTENT PERFIL  --------> FIN*/
 
-/*CONTENIDO*/
-.contentPerfil{
+/*CONTENIDO-----------------------------------------------------------*/
+/*----------PERFIL----------------------------------------------------*/
+.contentGeneral{
     background-color: #2e2d2d;
     padding: 5rem;
     height: 100vh;
@@ -116,28 +119,25 @@ button{
     overflow-y: scroll;
 }
 /* scroll style -----> https://ed.team/blog/personaliza-el-scroll-de-tu-web-solo-con-css*/ 
-    .contentPerfil::-webkit-scrollbar {
+    .contentGeneral::-webkit-scrollbar {
         width: 8px;     /* Tamaño del scroll en vertical */
     }
-    .contentPerfil::-webkit-scrollbar-thumb {
+    .contentGeneral::-webkit-scrollbar-thumb {
         background: #ccc;
         height: 30px;
         border-radius: 4px;
     }
 /* scroll style FIN */
 
-.contentPerfil .headerDescription{
+.contentGeneral .headerDescription{
     display: flex;
     align-items: center;
 }
-.contentPerfil .headerDescription .titleHeader{
+.contentGeneral .headerDescription .titleHeader{
     font-size: 2em;
     font-weight: bold;
 }
-.contentPerfil .itemsContainer{
-
-}
-.contentPerfil .itemstitle{
+.contentGeneral .itemstitle{
     color: #ffc4007a;
     font-weight: bold;
     font-size: 3em;
@@ -146,15 +146,93 @@ button{
     border-bottom: solid 1px;
     border-color: #ffffff1e;
 }   
-.contentPerfil .itemsContent{
-
-}
-.contentPerfil p{
+.contentGeneral p{
     color: #ffffffb7;
 }
-
-.contentPerfil .iconSobremi svg{
+.contentGeneral .iconSobremi svg{
 font-size: 3em;
 color: #ffc4007a;
 }
-/*CONTENIDO ----------> FIN*/
+/*----------RESUMEN----------------------------------------------------*/
+.contentGeneral .contentResumen {
+    margin: 0 10em;
+}
+.contentGeneral .contentResumen ul{
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}  
+.contentGeneral .contentResumen ul::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    height: 100%;
+    border: 1px dashed #ffffff2a;
+}
+.contentGeneral .contentResumen .box{
+    margin: 50px 0;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.2);
+    width: 400px;
+    position: relative;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 3px rgba(100, 100, 100, 0.3);
+}
+.contentGeneral .contentResumen .box >span{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    height: 100%;
+    border: 1px solid #424242;
+}
+.contentGeneral .contentResumen .box >span::before,
+.contentGeneral .contentResumen .box >span::after{
+    content: "";
+    position: absolute;
+    left: -7px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ccc;
+    background: #01579B;
+    border-radius: 100%;
+}
+.contentGeneral .contentResumen .box >span::before{
+    top: -12px;
+}
+.contentGeneral .contentResumen .box >span::after{
+    top: 100%;
+}
+/*end span*/
+.contentGeneral .contentResumen .box .title{
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.contentGeneral .contentResumen .box .sub-title{
+    font-size: 0.6rem;
+    color: #aaa;
+}
+.contentGeneral .contentResumen .box .info{
+    margin: 15px 0;
+}
+.contentGeneral .contentResumen .box .time .FechaInstitucion{
+    position: absolute;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    width: 150px;
+}
+.contentGeneral .contentResumen .box .time .FechaInstitucion:first-child{
+    top: -10px;
+    left: -170px;
+}
+.contentGeneral .contentResumen .box .time span:last-child{
+    top: 100%;
+    left: -70px;
+}
+
+/*CONTENIDO -------------------------------------------------------> FIN*/
