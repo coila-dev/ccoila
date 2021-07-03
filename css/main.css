@@ -3,7 +3,6 @@
 }
 
 /*general*/
-
 body{
     background-color: #2e2d2d;
     color: white;
@@ -15,6 +14,19 @@ body{
     border-radius: 50%;
     /* width: 150px; */
     z-index: 1;
+}
+button{
+    background-color: transparent;
+    color: white;
+    border: solid 0.2em;
+    border-radius: 3em;
+    padding: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.cargo{
+    color: #999999;
+    font-size: 1.2em;
 }
 
 /*MENU*/
@@ -70,10 +82,7 @@ body{
     /* z-index: -1; */
 }
 
-.areaPerfil .cargo{
-    color: #999999;
-    font-size: 1.2em;
-}
+
 .areaPerfil .redes ul{
     padding: 0;
     padding-top: 0.5em;
@@ -85,15 +94,7 @@ body{
 .areaPerfil .redes li a{
     color: white;
 }
-.areaPerfil button{
-    background-color: transparent;
-    color: white;
-    border: solid 0.2em;
-    border-radius: 3em;
-    padding: 0.5em;
-    padding-left: 2em;
-    padding-right: 2em;
-}
+
 
 
 @media only screen and (max-width: 600px) {
@@ -107,11 +108,12 @@ body{
     padding: 5rem;  
 }
 .contentPerfil .headerDescription{
-    margin: 0;
-    /* position: absolute; */
-    top: 50%;
-    /* -ms-transform: translateY(-50%);
-    transform: translateY(-50%); */
+    display: flex;
+    align-items: center;
+}
+.contentPerfil .headerDescription .titleHeader{
+    font-size: 2em;
+    font-weight: bold;
 }
 .contentPerfil .itemsContainer{
 
